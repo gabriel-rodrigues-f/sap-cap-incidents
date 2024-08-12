@@ -15,7 +15,7 @@ entity Incidents : cuid, managed {
     conversation : Composition of many {
                        key ID        : UUID;
                            timestamp : type of managed : createdAt;
-                           author    : type of managed : createdAt;
+                           author    : type of managed : createdBy;
                            message   : String
                    }
 }
